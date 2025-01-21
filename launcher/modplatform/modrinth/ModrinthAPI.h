@@ -75,11 +75,11 @@ class ModrinthAPI : public NetworkResourceAPI {
             return {};
         }
         if (side == "both")
-            return QString("\"client_side:required\",\"client_side:required\"");
+            return QString("\"client_side:required\",\"server_side:required\"");
         if (side == "client")
-            return QString("\"client_side:required\",\"client_side:optional\"");
+            return QString("\"client_side:required\",\"server_side:optional\"");
         if (side == "server")
-            return QString("\"server_side:required\",\"server_side:optional\"");
+            return QString("\"server_side:required\",\"client_side:optional\"");
         return {};
     }
 
