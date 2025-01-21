@@ -74,7 +74,7 @@ class ModrinthAPI : public NetworkResourceAPI {
         if (side.isEmpty()) {
             return {};
         }
-        if (side = "both")
+        if (side == "both")
             return QString("\"client_side:required\",\"client_side:required\"");
         if (side == "client")
             return QString("\"client_side:required\",\"client_side:optional\"");
